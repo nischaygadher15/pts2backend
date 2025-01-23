@@ -8,7 +8,7 @@ let app = express();
 //CORS
 app.use(
   cors({
-    origin: "https://pts2backend.vercel.app/",
+    origin: "https://nkgpts.netlify.app",
     methods: ["GET", "POST"],
   })
 );
