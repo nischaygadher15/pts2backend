@@ -6,7 +6,12 @@ import cors from "cors";
 let app = express();
 
 //CORS
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://pts2backend.vercel.app/",
+    methods: ["GET", "POST"],
+  })
+);
 app.use(express.json());
 
 //Routes
